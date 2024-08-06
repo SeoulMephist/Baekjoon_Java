@@ -9,6 +9,8 @@ public class n_2751 {
         int n = Integer.parseInt(br.readLine());
         int[] arr = new int[n];
 
+        StringBuilder sb = new StringBuilder();
+
         for (int i = 0; i < n; i++) {
             arr[i] = Integer.parseInt(br.readLine());
         }
@@ -16,7 +18,9 @@ public class n_2751 {
         Arrays.sort(arr);
 
         for(int i = 0; i < n; i++){
-            System.out.println(arr[i]);
+            sb.append(arr[i] + "\n");
         }
+
+        System.out.println(sb);
     }
 }
